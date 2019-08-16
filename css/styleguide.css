@@ -1,0 +1,15 @@
+@import url('sg-components/buttons.css');
+@import url('sg-components/typegraphy.css');
+@import url('sg-components/colors.css');
+
+.sg-container{
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.sg-body{
+    background-color: #fff;
+}
+

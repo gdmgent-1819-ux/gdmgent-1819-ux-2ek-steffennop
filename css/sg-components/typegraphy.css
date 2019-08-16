@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    /* 1rem = 16px */
+    line-height: 1.2rem;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 1.3rem;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin: 1.5rem 0 .5rem;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    margin: .5rem 0 1.5rem;
+}
+
+a{
+    color: var(--c-primary);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.66
+}
+
+a:hover{
+    color: var(--c-primary-dark);
+}

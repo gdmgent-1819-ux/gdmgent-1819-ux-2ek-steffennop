@@ -1,0 +1,29 @@
+.primary{
+    background-color: var(--c-primary);
+    height: 50px;
+    width: 100px;
+    border: 3px solid black;
+    color: white;
+}
+
+.secondary{
+    background-color: var(--c-secondary);
+    height: 50px;
+    width: 100px;
+    border: 3px solid black;
+    color: white;
+}
+
+.white{
+    background-color: var(--c-white);
+    height: 50px;
+    width: 100px;
+    border: 3px solid black;
+}
+
+.offwhite{
+    background-color: var(--c-offwhite);
+    height: 50px;
+    width: 100px;
+    border: 3px solid black;
+}

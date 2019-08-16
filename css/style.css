@@ -1,0 +1,645 @@
+@charset "utf-8";
+
+
+html,
+body {
+	min-height: 100%;
+}
+
+p,
+label {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+	background-color: #fff;
+}
+
+a,
+.transition-all {
+	-o-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-khtml-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+.montserrat-font {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h6 {
+	font-size: 19px;
+}
+
+@media(max-width:1199px) {
+	h5 {
+		font-size: 22px;
+	}
+
+	h6 {
+		font-size: 18px;
+	}
+}
+
+@media(max-width:991px) {
+	h5 {
+		font-size: 20px;
+	}
+
+	h6 {
+		font-size: 17px;
+	}
+}
+
+@media(max-width:767px) {
+	h5 {
+		font-size: 19px;
+	}
+
+	h6 {
+		font-size: 16px;
+	}
+}
+
+@media(max-width:575px) {
+	h5 {
+		font-size: 18px;
+	}
+
+	h6 {
+		font-size: 15px;
+	}
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+p.text-sm {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+p.text-xs {
+	font-size: 12px;
+	line-height: 1.3;
+}
+
+@media(max-width:767px) {
+	p {
+		font-size: 15px;
+	}
+
+	p.text-sm {
+		font-size: 13px;
+	}
+}
+
+@media(max-width:575px) {
+	p {
+		font-size: 14px;
+	}
+}
+
+.font-weight-300 {
+	font-weight: 300;
+}
+
+.white-color {
+	color: #fff;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.btn {
+	min-width: 130px;
+	padding: 5px 15px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	border: 0;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.btn-bold {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.btn-white {
+	background-color: #fff;
+	color: #000;
+}
+
+.btn-white:hover {
+	background-color: #ff0000;
+	color: #fff;
+}
+
+.btn-border-tl-0 {
+	border-top-left-radius: 0;
+}
+
+.btn-border-tr-0 {
+	border-top-right-radius: 0;
+}
+
+.btn-border-bl-0 {
+	border-bottom-left-radius: 0;
+}
+
+.btn-border-br-0 {
+	border-bottom-right-radius: 0;
+}
+
+.nav-icon {
+	width: 30px;
+	cursor: pointer;
+}
+
+.nav-icon:before,
+.nav-icon:after {
+	border-radius: 2px;
+	height: 3px;
+	margin: 7px 0;
+	transition: all 0.3s ease-in-out;
+	background-color: #FF0000;
+	content: "";
+	display: block;
+	position: relative;
+}
+
+.nav-icon:before {
+	box-shadow: 0 11px 0 #FF0000;
+	margin-bottom: 18px;
+}
+
+.nav-icon.active:before {
+	box-shadow: 0 0 0 #ff0000;
+	-webkit-transform: translateY(11px) rotate(45deg);
+	transform: translateY(11px) rotate(45deg);
+	background-color: #FF0000;
+	box-shadow: none;
+}
+
+.nav-icon.active:after {
+	-webkit-transform: translateY(-11px) rotate(-45deg);
+	transform: translateY(-11px) rotate(-45deg);
+	background-color: #FF0000;
+}
+
+@media(min-width:768px) {
+	.nav-icon {
+		display: none;
+	}
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	font-weight: 400;
+}
+
+.header {
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	min-height: 115px;
+	padding: 10px 0;
+}
+
+.header.position-fixed,
+.header.position-absolute {
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.header .logo {
+	margin-right: 50px;
+}
+
+.menu ul li a {
+	font-size: 16px;
+	color: #000;
+	display: block;
+}
+
+.banner {
+	min-height: 100vh;
+}
+
+.banner-1 {
+	background: url(../images/banner-1.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.banner-content {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 15px 0;
+	background: rgba(78, 78, 78, 0.5);
+	min-height: 150px;
+}
+
+.banner-content h5 {
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.banner-content h5:last-child {
+	margin-bottom: 0;
+}
+
+.contents {
+	padding: 50px 0;
+	background-color: #fff;
+}
+
+.contents .section {
+	margin-bottom: 16px;
+}
+
+.contents .section:last-child {
+	margin-bottom: 0;
+}
+
+.image-article {
+	overflow: hidden;
+	padding: 30px;
+}
+
+.image-article-overlay {
+	position: relative;
+}
+
+.image-article-overlay:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(29, 29, 29, 0.29);
+	content: "";
+}
+
+.image-article-1 {
+	min-height: 320px;
+	background: url(../images/article-image-1.png) center center no-repeat;
+	background-size: cover;
+	border-radius: 5px 5px 0 5px;
+}
+
+.image-article-2 {
+	min-height: 400px;
+	background: url(../images/article-image-2.png) center center no-repeat;
+	background-size: cover;
+	border-radius: 5px 5px 0 5px;
+}
+
+.image-article-3 {
+	min-height: 400px;
+	background: url(../images/article-image-3.png) center center no-repeat;
+	background-size: cover;
+	border-radius: 5px 5px 5px 0;
+}
+
+.image-article h6 {
+	margin-bottom: 15px;
+}
+
+.image-article h6:last-child {
+	margin-bottom: 0;
+}
+
+.section .row {
+	margin: -8px;
+}
+
+.section .row .column {
+	padding: 8px;
+}
+
+.section .row.no-gutters {
+	margin: 0;
+}
+
+.section .row.no-gutters .column {
+	padding: 0;
+}
+
+.main-section {
+	min-height: 500px;
+}
+
+.school-wrap {
+	border-radius: 0 5px 5px 5px;
+	overflow: hidden;
+}
+
+.school {
+	background-color: #5FAAC7;
+	padding: 30px;
+}
+
+.school-image {
+	background: url(../images/article-image-4.png) center center no-repeat;
+	background-size: cover;
+}
+
+.article-block {
+	margin-bottom: 20px;
+}
+
+.article-block:last-child {
+	margin-bottom: 0;
+}
+
+.article-block p {
+	margin-bottom: 10px;
+}
+
+.twitter-tweets {
+	background-color: #2a2f33;
+	overflow: hidden;
+	border-radius: 5px 0px 5px 5px;
+}
+
+.footer {
+	background-color: #eee;
+	padding: 30px 0;
+}
+
+.footer h6 {
+	margin-bottom: 15px;
+}
+
+.footer-block {
+	margin-bottom: 20px;
+}
+
+.footer-block:last-child {
+	margin-bottom: 0;
+}
+
+.footer-block p {
+	margin-bottom: 3px;
+}
+
+.footer-block p:last-child {
+	margin-bottom: 0;
+}
+
+.footer-contacts a {
+	color: #000;
+}
+
+.footer-contacts a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.social-icons a {
+	font-size: 20px;
+	margin-right: 10px;
+	color: #000;
+}
+
+.social-icons a:last-child {
+	margin-right: 0;
+}
+
+.social-icons a:hover {
+	color: #000;
+	opacity: 0.6;
+}
+
+@media(max-width:1199px) {
+	.container {
+		max-width: 100%;
+	}
+
+	.header {
+		min-height: 100px;
+	}
+
+	.menu ul li a {
+		font-size: 14px;
+	}
+
+	.logo img {
+		max-width: 110px;
+	}
+
+	.header .logo {
+		margin-right: 40px;
+	}
+
+	.banner-content {
+		min-height: 130px;
+	}
+
+	.image-article-1 {
+		min-height: 280px;
+	}
+
+	.image-article-2 {
+		min-height: 360px;
+	}
+
+	.image-article-3 {
+		min-height: 360px;
+	}
+}
+
+@media(max-width:991px) {
+	.header {
+		min-height: 80px;
+	}
+
+	.menu ul li a {
+		font-size: 13px;
+	}
+
+	.logo img {
+		max-width: 90px;
+	}
+
+	.header .logo {
+		margin-right: 30px;
+	}
+
+	.banner-content {
+		min-height: 100px;
+	}
+
+	.contents {
+		padding: 30px 0;
+	}
+
+	.image-article-1 {
+		min-height: 250px;
+	}
+
+	.image-article-2 {
+		min-height: 330px;
+	}
+
+	.image-article-3 {
+		min-height: 330px;
+	}
+
+	.image-article,
+	.school {
+		padding: 15px;
+	}
+}
+
+@media(min-width:768px) {
+	.menu {
+		display: block !important;
+	}
+
+	.menu ul li a.active {
+		color: #FF0000;
+		font-weight: 600;
+	}
+
+	.menu ul li a:hover {
+		color: #FF0000;
+	}
+}
+
+@media(max-width:767px) {
+	.header {
+		min-height: auto;
+	}
+
+	.menu {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		display: none;
+	}
+
+	.menu ul li {
+		border-bottom: 1px solid #e50101;
+	}
+
+	.menu ul li:last-child {
+		border-bottom: 0;
+	}
+
+	.menu ul li a {
+		padding: 5px 15px;
+		line-height: 30px;
+		background-color: #FF0000;
+		color: #fff;
+	}
+
+	.menu ul li a:hover {
+		background-color: #e50101;
+	}
+
+	.logo {
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+	}
+
+	.banner-content {
+		min-height: auto;
+	}
+
+	.banner-content h5 {
+		margin-bottom: 5px;
+	}
+
+	.footer {
+		padding: 25px 0;
+	}
+
+	.image-article-1 {
+		min-height: 220px;
+	}
+
+	.image-article-2 {
+		min-height: 300px;
+	}
+
+	.image-article-3 {
+		min-height: 300px;
+	}
+
+	.school-image {
+		min-height: 300px;
+	}
+}
+
+@media(max-width:575px) {
+	.footer {
+		text-align: center;
+	}
+}
